@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Clothing Company</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f2f2f2;
+        color: #333;
+    }
+    header {
+        background-color: #333;
+        color: white;
+        text-align: center;
+        padding: 10px 0;
+    }
+    main {
+        padding: 20px;
+    }
+    footer {
+        background-color: #333;
+        color: white;
+        text-align: center;
+        padding: 10px 0;
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+    }
+    .product {
+        border: 1px solid #ccc;
+        padding: 10px;
+        margin-bottom: 10px;
+        background-color: #fff;
+    }
+    button {
+        background-color: #333;
+        color: white;
+        padding: 5px 10px;
+        border: none;
+        cursor: pointer;
+    }
+</style>
+</head>
+<body>
+<header>
+    <h1>Clothing Company</h1>
+</header>
+<main>
+    <div class="product">
+        <h2>Product Name</h2>
+        <p>Description of the product.</p>
+        <button onclick="addToCart()">Add to Cart</button>
+    </div>
+    <section id="home">
+        <h2>Welcome to our Clothing Company!</h2>
+        <p>Check out our latest collection...</p>
+    </section>
+    <section id="about">
+        <h2>About Us</h2>
+        <p>We are a clothing company dedicated to providing high-quality, stylish clothing for all occasions.</p>
+    </section>
+</main>
+<footer>
+    &copy; 2023 Clothing Company
+</footer>
+<script>
+    let cart = [];
+
+    function addToCart() {
+        cart.push("Product Name");
+        alert("Product added to cart!");
+        console.log(cart);
+    }
+</script>
+</body>
+</html>
